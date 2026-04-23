@@ -1,0 +1,248 @@
+/* ===========================
+   ANKUSH FALKE PORTFOLIO CSS
+   Design: Digital Blueprint Dark
+   =========================== */
+
+:root {
+  --bg-deep:    #060b14;
+  --bg-surface: #0b1220;
+  --bg-card:    #0f1a2e;
+  --bg-hover:   #132035;
+
+  --border:     #1c2e4a;
+  --border-glow:#2a4a7a;
+
+  --sky:        #38bdf8;
+  --sky-dim:    #1e6a94;
+  --pink:       #f472b6;
+  --amber:      #fbbf24;
+  --green:      #34d399;
+
+  --text-bright:#f0f6ff;
+  --text-main:  #b8cce0;
+  --text-muted: #5a7a9a;
+  --text-faint: #2a4060;
+
+  --mono:       'JetBrains Mono', monospace;
+  --sans:       'DM Sans', sans-serif;
+  --display:    'Josefin Sans', sans-serif;
+
+  --radius:     6px;
+  --radius-lg:  12px;
+  --glow-sky:   0 0 30px rgba(56,189,248,0.15);
+  --glow-pink:  0 0 30px rgba(244,114,182,0.15);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-main);
+  font-family: var(--sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--sky-dim); border-radius: 9999px; }
+
+/* ─── Selection ─── */
+::selection { background: rgba(56,189,248,0.25); color: var(--sky); }
+
+/* ─── Grid background overlay ─── */
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ─── Gradient orbs ─── */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+}
+.orb-1 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(56,189,248,0.3), transparent 70%);
+  top: -100px; left: -150px;
+}
+.orb-2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(244,114,182,0.2), transparent 70%);
+  bottom: 10%; right: -100px;
+}
+.orb-3 {
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, rgba(251,191,36,0.12), transparent 70%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ─── Typography ─── */
+h1, h2, h3, h4 { font-family: var(--display); color: var(--text-bright); }
+
+a { color: var(--sky); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--text-bright); }
+
+/* ─── Layout ─── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  padding: 100px 0;
+}
+
+/* ─── Section Labels ─── */
+.section-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--sky);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.section-divider {
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--sky), transparent);
+  margin-bottom: 48px;
+}
+
+/* ─── Buttons ─── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--sky);
+  color: var(--bg-deep);
+  font-weight: 700;
+}
+.btn-primary:hover {
+  background: var(--text-bright);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-sky);
+  color: var(--bg-deep);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--sky);
+  border: 1px solid var(--sky);
+}
+.btn-outline:hover {
+  background: rgba(56,189,248,0.08);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-sky);
+  color: var(--sky);
+}
+
+/* ─── Cards ─── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.card:hover {
+  border-color: var(--sky-dim);
+  box-shadow: var(--glow-sky);
+  transform: translateY(-4px);
+}
+
+/* ─── Fade-in animation ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* ─── Mono tag ─── */
+.tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(56,189,248,0.08);
+  color: var(--sky);
+  border: 1px solid rgba(56,189,248,0.2);
+  letter-spacing: 0.05em;
+}
+
+.tag-pink {
+  background: rgba(244,114,182,0.08);
+  color: var(--pink);
+  border-color: rgba(244,114,182,0.2);
+}
+
+.tag-amber {
+  background: rgba(251,191,36,0.08);
+  color: var(--amber);
+  border-color: rgba(251,191,36,0.2);
+}
+
+.tag-green {
+  background: rgba(52,211,153,0.08);
+  color: var(--green);
+  border-color: rgba(52,211,153,0.2);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  section { padding: 70px 0; }
+  .section-title { font-size: 1.8rem; }
+}
