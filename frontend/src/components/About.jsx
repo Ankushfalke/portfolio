@@ -29,7 +29,7 @@ export default function About() {
 
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '20px', fontSize: '1.02rem' }}>
               I'm a Computer Engineering graduate from{' '}
-              <strong style={{ color: 'var(--text-bright)' }}>JSPM's BSCOER, Pune</strong> (SPPU)
+              <strong style={{ color: 'var(--text-bright)' }}>JSPM's BSIOTR, Pune</strong> (SPPU)
               with a passion for building full-stack applications that solve real problems.
               My journey spans frontend development with React, backend with Python Flask,
               and quality assurance — giving me a unique end-to-end perspective.

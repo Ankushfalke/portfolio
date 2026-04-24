@@ -240,11 +240,14 @@ export default function Hero() {
           to { transform: rotate(360deg); }
         }
         @media (max-width: 768px) {
-          .hero-grid {
-            grid-template-columns: 1fr !important;
-          }
-          
-        }
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-avatar-wrap {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
       `}</style>
     </section>
   )

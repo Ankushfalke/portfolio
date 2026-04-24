@@ -21,7 +21,7 @@ const EXPERIENCE = [
 const EDUCATION = [
   {
     degree: 'B.E. in Computer Engineering',
-    institution: 'JSPM\'s BSCOER — Savitribai Phule Pune University',
+    institution: 'JSPM\'s BSIOTR — Savitribai Phule Pune University',
     period: '2021 – 2025',
     score: 'CGPA: 8.45',
     color: 'var(--pink)',
