@@ -4,24 +4,24 @@
    =========================== */
 
 :root {
-    --bg-deep:    #f0f2f5;
-  --bg-surface: #e8ebf0;
-  --bg-card:    #ffffff;
-  --bg-hover:   #dde2ea;
+   --bg-deep:    #0a1628;
+  --bg-surface: #0f2040;
+  --bg-card:    #132550;
+  --bg-hover:   #1a2f60;
 
-  --border:     #c8d0dc;
-  --border-glow:#4a6fa5;
+  --border:     #1e3a6e;
+  --border-glow:#2952a3;
 
-  --sky:        #1e3a6e;
-  --sky-dim:    #2952a3;
-  --pink:       #c2185b;
-  --amber:      #e65100;
-  --green:      #2e7d32;
+  --sky:        #4d9fff;
+  --sky-dim:    #2563eb;
+  --pink:       #818cf8;
+  --amber:      #fbbf24;
+  --green:      #34d399;
 
-  --text-bright:#0d1b2a;
-  --text-main:  #1e2d3d;
-  --text-muted: #4a5568;
-  --text-faint: #a0aec0;
+  --text-bright:#ffffff;
+  --text-main:  #cbd5e1;
+  --text-muted: #7da3c8;
+  --text-faint: #2d4a6e;
 
   --mono:       'JetBrains Mono', monospace;
   --sans:       'DM Sans', sans-serif;
