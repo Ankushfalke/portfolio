@@ -6,23 +6,24 @@
 :root {
 
   --bg-deep:    #1a1a1a;
-  --bg-surface: #242424;
-  --bg-card:    #2e2e2e;
-  --bg-hover:   #383838;
+  --bg-deep:    #ffffff;
+  --bg-surface: #f4f7fb;
+  --bg-card:    #ffffff;
+  --bg-hover:   #eaf1fb;
 
-  --border:     #404040;
-  --border-glow:#f97316;
+  --border:     #d0dcea;
+  --border-glow:#2563eb;
 
-  --sky:        #f97316;
-  --sky-dim:    #ea6c0a;
-  --pink:       #fb923c;
-  --amber:      #fbbf24;
-  --green:      #4ade80;
+  --sky:        #2563eb;
+  --sky-dim:    #1d4ed8;
+  --pink:       #7c3aed;
+  --amber:      #d97706;
+  --green:      #059669;
 
-  --text-bright:#ffffff;
-  --text-main:  #e5e5e5;
-  --text-muted: #a3a3a3;
-  --text-faint: #525252;
+  --text-bright:#0f172a;
+  --text-main:  #1e293b;
+  --text-muted: #475569;
+  --text-faint: #94a3b8;
 
   --mono: 'JetBrains Mono', monospace;
   --sans: 'DM Sans', sans-serif;
@@ -82,9 +83,8 @@ body {
   pointer-events: none;
   z-index: 0;
   background-image:
-    linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
+    linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,0.04) 1px, transparent 1px);
 }
 
 /* ─── Gradient orbs ─── */
